@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}変数の練習{% endblock %}
+{% block body %}
+  <div>
+    {{ hour }}時です。<br>
+    {{ message }}
+  </div>
+  <div>
+    <a href="{% url 'elements:hello_world' %}">hello_world</a><br>
+    <a href="{% url 'elements:hello_template' %}">template</a><br>
+    <a href="{% url 'elements:hello_if' %}">if</a><br>
+  </div>
+{% endblock %}

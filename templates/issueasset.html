@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h2>Elements上でのアセットトークン発行</h2>
+<br>
+
+    <form action="" method="get">
+	    <label>発行数量:<input type="text" size="20" name="assetamount"></label>
+	<br>
+	<label>再発行要否:<input type="text" size="20" name="tokenamount"></label>
+	<br>
+        <input type="submit" value="送信">
+    </form>
+    {% if assetamount %}
+        {{ assetamount }} の数量を発行します。
+	{{ tokenamount }} ：再発行要否。
+    {% endif %}
+{% endblock %}
